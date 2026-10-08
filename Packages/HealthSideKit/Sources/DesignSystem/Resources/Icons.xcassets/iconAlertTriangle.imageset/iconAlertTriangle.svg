@@ -1,0 +1,7 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon/Alert triangle">
+<path id="Vector" d="M12 9V13" stroke="#241A19" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M12 16.3V16.4" stroke="#241A19" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M10.3 4.5L2.7 18C2.54015 18.2767 2.45683 18.5909 2.4586 18.9104C2.46036 19.2299 2.54715 19.5432 2.71005 19.8181C2.87294 20.093 3.10607 20.3196 3.38549 20.4746C3.66492 20.6295 3.98056 20.7074 4.3 20.7H19.7C20.0194 20.7074 20.3351 20.6295 20.6145 20.4746C20.8939 20.3196 21.1271 20.093 21.29 19.8181C21.4529 19.5432 21.5396 19.2299 21.5414 18.9104C21.5432 18.5909 21.4598 18.2767 21.3 18L13.7 4.5C13.5772 4.14702 13.3475 3.84102 13.0429 3.62449C12.7382 3.40795 12.3737 3.29161 12 3.29161C11.6263 3.29161 11.2618 3.40795 10.9571 3.62449C10.6525 3.84102 10.4228 4.14702 10.3 4.5Z" stroke="#241A19" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

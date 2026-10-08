@@ -15,3 +15,11 @@ The `DesignSystem` module of `HealthSideKit` owns the visual tokens. Source of t
 - Values live in `Sources/DesignSystem/Resources/Colors.xcassets`, one colorset per token; Swift code never repeats a hex value.
 - A color the design doesn't have yet is added to Figma first, then to the catalog and the API — never improvised in a feature.
 - The app is light-only (`UIUserInterfaceStyle = Light`); a colorset carries the light value only until the design gets a dark mode.
+
+## Icons
+
+- Every icon comes from `DesignSystem`: `Image.icons.home`, `Image.icons.chevronRight`. No `Image(systemName:)` or `Image("…")` by name in feature code; system controls that bring their own symbols (`ShareLink`, menus) are the exception.
+- Names mirror the Figma page «Icons» 1:1: `Icon/Document check` → `.documentCheck`.
+- Assets are the SVGs exported from Figma, in `Sources/DesignSystem/Resources/Icons.xcassets` with vector data preserved. Monochrome icons are template images and take their color from a token at the call site (`.foregroundStyle(.text.secondary)`); multicolor icons (`mailVerified`, `clear`) render their original colors.
+- Default size is the 24pt grid; other sizes from the design (16, 19, 20, 22) are `.resizable().frame(width:height:)` at the call site — the stroke scales with the icon.
+- An icon the design doesn't have yet is added to Figma first, then to the catalog and the API.
