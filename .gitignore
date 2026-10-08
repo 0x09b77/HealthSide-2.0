@@ -1,0 +1,35 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Xcode
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+DerivedData/
+*.xcresult
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Build scripts output (scripts/_env.sh)
+build/
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Claude Code: personal settings stay local
+.claude/settings.local.json
+CLAUDE.local.md
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*~

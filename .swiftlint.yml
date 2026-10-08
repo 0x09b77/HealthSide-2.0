@@ -1,0 +1,21 @@
+included:
+  - HealthSide
+  - HealthSideTests
+  - HealthSideUITests
+  - Packages/HealthSideKit/Sources
+  - Packages/HealthSideKit/Tests
+excluded:
+  - build
+disabled_rules:
+  - trailing_comma
+  - type_name
+opt_in_rules:
+  - force_unwrapping
+  - sorted_imports
+  - explicit_init
+  - closure_spacing
+line_length:
+  warning: 120
+  error: 160
+force_cast: error
+force_try: error
