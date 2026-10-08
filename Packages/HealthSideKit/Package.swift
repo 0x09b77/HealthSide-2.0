@@ -23,6 +23,7 @@ let package = Package(
         .target(
             name: "DesignSystem",
             dependencies: ["Core"],
+            resources: [.process("Resources")],
             swiftSettings: swiftSettings
         ),
     ]

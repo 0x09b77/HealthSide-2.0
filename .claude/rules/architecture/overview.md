@@ -17,6 +17,7 @@ Rules take precedence over existing code: [../precedence.md](../precedence.md).
 | Where files go | [folder-structure.md](folder-structure.md) |
 | ViewModels, View ↔ ViewModel | [mvvm.md](mvvm.md) |
 | How a feature view is written | [feature-views.md](feature-views.md) |
+| Colors and other visual tokens | [design-system.md](design-system.md) |
 | Routers, flows, screens | [navigation.md](navigation.md) |
 | Dependency clients | [dependencies.md](dependencies.md) |
 | Isolation, background work, thread safety | [concurrency.md](concurrency.md) |
