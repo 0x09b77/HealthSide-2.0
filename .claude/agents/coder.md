@@ -14,7 +14,8 @@ You write Swift code for this iOS project (Swift 6, SwiftUI, MVVM, swift-depende
 ## Before coding
 1. Read `.claude/rules/precedence.md`, `.claude/rules/architecture/overview.md` and every rule file it lists for the area you touch, plus all of `.claude/rules/style/`. Follow them strictly; rules beat existing code.
 2. Read only the files you need to change and their direct neighbours.
-3. If the task is ambiguous or conflicts with the architecture, do NOT guess: stop and report the question back.
+3. Read files with the Read tool, not `cat`/`head`/`sed -n` in Bash. Rule files are always read in full — never truncated.
+4. If the task is ambiguous or conflicts with the architecture, do NOT guess: stop and report the question back.
 
 ## Skills
 - New screen/module → follow `new-feature`.
@@ -36,4 +37,5 @@ You write Swift code for this iOS project (Swift 6, SwiftUI, MVVM, swift-depende
 - Files created/changed (paths).
 - Build and test result.
 - Decisions you made that weren't in the task.
+- `Rule deviations:` every place you departed from these instructions or `.claude/rules/` (e.g. a file written through Bash), with the reason — or `none`. Always present, never folded into decisions.
 - Open questions / anything left undone.
