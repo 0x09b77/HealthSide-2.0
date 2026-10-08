@@ -17,6 +17,11 @@ opt_in_rules:
 identifier_name:
   excluded:
     - bg
+    - xs
+    - sm
+    - md
+    - lg
+    - xl
 line_length:
   warning: 120
   error: 160
