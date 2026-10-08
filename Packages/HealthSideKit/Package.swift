@@ -8,6 +8,11 @@ let swiftSettings: [SwiftSetting] = [
     .enableUpcomingFeature("InferIsolatedConformances"),
 ]
 
+let testSwiftSettings: [SwiftSetting] = [
+    .enableUpcomingFeature("NonisolatedNonsendingByDefault"),
+    .enableUpcomingFeature("InferIsolatedConformances"),
+]
+
 let package = Package(
     name: "HealthSideKit",
     defaultLocalization: "en",
@@ -25,6 +30,11 @@ let package = Package(
             dependencies: ["Core"],
             resources: [.process("Resources")],
             swiftSettings: swiftSettings
+        ),
+        .testTarget(
+            name: "DesignSystemTests",
+            dependencies: ["DesignSystem"],
+            swiftSettings: testSwiftSettings
         ),
     ]
 )
