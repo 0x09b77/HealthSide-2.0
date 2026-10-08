@@ -16,8 +16,13 @@ Rules take precedence over existing code: [../precedence.md](../precedence.md).
 | --- | --- |
 | Where files go | [folder-structure.md](folder-structure.md) |
 | ViewModels, View ↔ ViewModel | [mvvm.md](mvvm.md) |
-| How a feature view is written | [feature-views.md](feature-views.md) |
-| Colors and other visual tokens | [design-system.md](design-system.md) |
+| How a feature view is written | [../ui/feature-views.md](../ui/feature-views.md) |
+| Design system: source, index of UI rules | [../ui/design-system.md](../ui/design-system.md) |
+| Colors and gradients | [../ui/colors.md](../ui/colors.md) |
+| Radius, spacing, shadows, focus rings | [../ui/layout-and-effects.md](../ui/layout-and-effects.md) |
+| Text styles | [../ui/typography.md](../ui/typography.md) |
+| Icons | [../ui/icons.md](../ui/icons.md) |
+| Components | [../ui/components.md](../ui/components.md) |
 | Routers, flows, screens | [navigation.md](navigation.md) |
 | Dependency clients | [dependencies.md](dependencies.md) |
 | Isolation, background work, thread safety | [concurrency.md](concurrency.md) |

@@ -2,7 +2,7 @@
 
 App to save, analys and other features (iOS 18+, SPM), built with an AI agent. stack: Swift 6, SwiftUI + UIKit, Structured Concurrency.
 
-Rules: `.claude/rules/` — start at `architecture/overview.md` (index) and `precedence.md`; `style/` and `architecture/` files load when Swift files are touched.
+Rules: `.claude/rules/` — start at `architecture/overview.md` (index) and `precedence.md`; `architecture/`, `ui/` and `style/` files load when Swift files are touched.
 
 ## Agents
 | Agent | When to call |

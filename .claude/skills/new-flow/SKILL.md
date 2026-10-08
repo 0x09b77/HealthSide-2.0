@@ -90,7 +90,7 @@ private extension <Flow>FlowView {
 ```
 - `nonisolated` on the route enum, the key and the `DependencyValues` extension is required (default `@MainActor` isolation breaks them otherwise).
 - The flow view is the only view allowed to read a router via `@Dependency`.
-- Layout per `architecture/feature-views.md`; the `switch` over routes is exhaustive, no `default`.
+- Layout per `ui/feature-views.md`; the `switch` over routes is exhaustive, no `default`.
 
 ## 3. Screens
 Create each screen with the `new-feature` skill. Screens of this flow navigate via `@Dependency(\.<flow>Router)`, never via another flow's router.

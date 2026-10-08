@@ -5,7 +5,7 @@ paths:
 
 # Type Layout
 
-How a type's declaration and its extensions are laid out: blank lines, the order of properties, where properties and nested types sit, and how conformances are written. Where a file lives is [../architecture/folder-structure.md](../architecture/folder-structure.md); how a view's body is split is [../architecture/feature-views.md](../architecture/feature-views.md); how expressions are written is [swift-conventions.md](swift-conventions.md).
+How a type's declaration and its extensions are laid out: blank lines, the order of properties, where properties and nested types sit, and how conformances are written. Where a file lives is [../architecture/folder-structure.md](../architecture/folder-structure.md); how a view's body is split is [../ui/feature-views.md](../ui/feature-views.md); how expressions are written is [swift-conventions.md](swift-conventions.md).
 
 ## Blank lines
 

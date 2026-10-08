@@ -4,7 +4,7 @@ description: Create a new feature module (screen) in Features/<Name>/ following 
 argument-hint: <FeatureName> [what it does]
 ---
 
-Create feature `$ARGUMENTS`. Rules live in `.claude/rules/architecture/` (`folder-structure`, `mvvm`, `feature-views`, `navigation`, `dependencies`) and `.claude/rules/style/` — follow them; this skill is the step-by-step.
+Create feature `$ARGUMENTS`. Rules live in `.claude/rules/architecture/` (`folder-structure`, `mvvm`, `navigation`, `dependencies`), `.claude/rules/ui/` (`feature-views`, `components` and the design tokens) and `.claude/rules/style/` — follow them; this skill is the step-by-step.
 
 ## 1. Inputs (ask/report back if unclear)
 - Name in PascalCase without suffix (`PhotoEditor`, not `PhotoEditorScreen`).
@@ -93,7 +93,7 @@ private extension <Name>View {
     <Name>View(input: ...)                  // sample input
 }
 ```
-- Layout per `architecture/feature-views.md`; property order per `style/type-layout.md`.
+- Layout per `ui/feature-views.md`; property order per `style/type-layout.md`.
 - Shared code comes from `HealthSideKit` modules: `import Core` (Router, extensions), `import DesignSystem` (shared components), `import Models`, `import <Name>Client` — never a `*Live` module.
 - The view only reads `viewModel` state and calls its methods. No logic, no `@Dependency`, no navigation in the view.
 - Previews get `previewValue` of every dependency automatically; override with `withDependencies` only if a specific state is needed.

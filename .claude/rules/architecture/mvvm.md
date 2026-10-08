@@ -5,7 +5,7 @@ paths:
 
 # MVVM
 
-How a ViewModel is written and how a view talks to it. How the view's body is laid out is [feature-views.md](feature-views.md); property order inside the ViewModel is [../style/type-layout.md](../style/type-layout.md).
+How a ViewModel is written and how a view talks to it. How the view's body is laid out is [feature-views.md](../ui/feature-views.md); property order inside the ViewModel is [../style/type-layout.md](../style/type-layout.md).
 
 ## ViewModel
 

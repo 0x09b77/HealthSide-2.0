@@ -5,7 +5,7 @@ paths:
 
 # Feature Views
 
-How feature SwiftUI views and their animations are written. What the view may do at all is [mvvm.md](mvvm.md).
+How feature SwiftUI views and their animations are written. What the view may do at all is [mvvm.md](../architecture/mvvm.md).
 
 ## View structure
 
