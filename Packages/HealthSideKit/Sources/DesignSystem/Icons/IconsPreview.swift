@@ -14,7 +14,7 @@ import SwiftUI
                         .foregroundStyle(.text.secondary)
                 }
             }
-            Text("home sizes")
+            Text(verbatim: "home sizes")
                 .font(.headline)
                 .foregroundStyle(.text.primary)
             HStack(spacing: 16) {

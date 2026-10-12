@@ -25,11 +25,16 @@ Rules: `.claude/rules/` — start at `architecture/overview.md` (index) and `pre
 3. Implement step by step; build after each step.
 4. Add unit tests for logic (Swift Testing: `import Testing`, `@Test`).
 5. Review: run `reviewer` after `coder`. Blockers go back to `coder` to fix, then one more review; blockers still left after that and all suggestions go to the user.
-6. Done = build green, tests green, verified in simulator, format clean.
+6. Done = build green, tests green, format clean. Checking in the simulator is the user's call — see below.
+
+## Simulator
+- Only `tester` touches the simulator, and only when the user asks for it (`/verify`). The main agent and every other agent never launch or drive the simulator: no `scripts/run.sh`, no Xcode MCP `DeviceInteraction*` sessions, no `xcrun simctl`, no simulator tool — not even "to quickly check".
+- When something can only be confirmed at runtime, say so in the report and suggest a `/verify` flow; don't run it.
+- Rendering a `#Preview` (Xcode MCP `RenderPreview`) is also on request only: `/preview <file> [Figma link]` — a static picture compared with Figma, no app launch.
 ## Token economy
 - To locate anything in the project, delegate to the `scout` subagent (Haiku 5.5, ≤10-line answer) or `/scout <what>`; don't grep/read around yourself.
 - Build/test only via `scripts/build.sh` / `scripts/test.sh` (`build-and-test` skill); never dump full logs, grep `build/logs`.
-- In the simulator, read the Xcode MCP UI hierarchy (small text) first; open a screenshot only for visual checks. Read only the files you need.
+- Read only the files you need.
 
 ## MCP
 Official Xcode MCP and Figma MCP (needs OAuth on first use) are configured in `.mcp.json` (`xcrun mcpbridge`, requires Xcode open with this project). Use it for previews, doc search and project navigation.

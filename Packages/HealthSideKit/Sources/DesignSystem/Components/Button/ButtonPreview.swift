@@ -17,14 +17,14 @@ import SwiftUI
 private struct PrimaryButtonSection: View {
     var body: some View {
         VStack(alignment: .leading, spacing: .spacing.lg) {
-            Text("Primary")
+            Text(verbatim: "Primary")
                 .typography(.titleS)
                 .foregroundStyle(.text.primary)
-            Button("Get started") {}
+            Button { } label: { Text(verbatim: "Get started") }
                 .buttonStyle(.primary)
-            PrimaryButtonContent(label: Text("Get started"), isPressed: true, isLoading: false)
-            PrimaryButtonContent(label: Text("Creating account…"), isPressed: false, isLoading: true)
-            Button("Get started") {}
+            PrimaryButtonContent(label: Text(verbatim: "Get started"), isPressed: true, isLoading: false)
+            PrimaryButtonContent(label: Text(verbatim: "Creating account…"), isPressed: false, isLoading: true)
+            Button { } label: { Text(verbatim: "Get started") }
                 .buttonStyle(.primary)
                 .disabled(true)
         }
@@ -34,13 +34,13 @@ private struct PrimaryButtonSection: View {
 private struct DestructiveTextButtonSection: View {
     var body: some View {
         VStack(alignment: .leading, spacing: .spacing.lg) {
-            Text("Destructive text")
+            Text(verbatim: "Destructive text")
                 .typography(.titleS)
                 .foregroundStyle(.text.primary)
-            Button("Log out") {}
+            Button { } label: { Text(verbatim: "Log out") }
                 .buttonStyle(.destructiveText)
-            DestructiveTextButtonContent(label: Text("Log out"), isPressed: true)
-            Button("Log out") {}
+            DestructiveTextButtonContent(label: Text(verbatim: "Log out"), isPressed: true)
+            Button { } label: { Text(verbatim: "Log out") }
                 .buttonStyle(.destructiveText)
                 .disabled(true)
         }

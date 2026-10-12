@@ -21,3 +21,4 @@ How a ViewModel is written and how a view talks to it. How the view's body is la
 - The view calls ViewModel methods directly: `Button("Save") { viewModel.saveTapped() }`, `.task { await viewModel.onAppear() }`.
 - The view only reads state and calls methods; no logic, no `@Dependency`, no navigation in the view.
 - Methods are named after the event, not the effect: `saveTapped()`, `onAppear()`, `filterSelected(_:)` — not `saveToDatabase()`.
+- User input is no exception to `private(set)`: the ViewModel exposes `private(set) var email` and an event method `emailChanged(_:)`; the view binds a control with `Binding(get: { viewModel.email }, set: { viewModel.emailChanged($0) })`. Never a plain `var` just to get `$viewModel.email`.

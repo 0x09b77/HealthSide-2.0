@@ -22,11 +22,11 @@ private struct ShadowSection: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: .spacing.lg) {
-            Text("shadow")
+            Text(verbatim: "shadow")
                 .typography(.titleS)
                 .foregroundStyle(.text.primary)
             ForEach(tokens, id: \.name) { item in
-                Text(".shadow(.\(item.name))")
+                Text(verbatim: ".shadow(.\(item.name))")
                     .typography(.caption)
                     .foregroundStyle(.text.secondary)
                     .frame(maxWidth: .infinity)
@@ -44,18 +44,18 @@ private struct ShadowSection: View {
 private struct FocusRingSection: View {
     var body: some View {
         VStack(alignment: .leading, spacing: .spacing.lg) {
-            Text("focusRing")
+            Text(verbatim: "focusRing")
                 .typography(.titleS)
                 .foregroundStyle(.text.primary)
             RoundedRectangle(cornerRadius: .radius.md)
                 .fill(.bg.surface)
                 .frame(height: 48)
-                .overlay(Text("ring").typography(.caption).foregroundStyle(.text.secondary))
+                .overlay(Text(verbatim: "ring").typography(.caption).foregroundStyle(.text.secondary))
                 .focusRing(in: RoundedRectangle(cornerRadius: .radius.md))
             RoundedRectangle(cornerRadius: .radius.md)
                 .fill(.bg.surface)
                 .frame(height: 48)
-                .overlay(Text("ringActive").typography(.caption).foregroundStyle(.text.secondary))
+                .overlay(Text(verbatim: "ringActive").typography(.caption).foregroundStyle(.text.secondary))
                 .focusRing(.ringActive, in: RoundedRectangle(cornerRadius: .radius.md))
         }
     }

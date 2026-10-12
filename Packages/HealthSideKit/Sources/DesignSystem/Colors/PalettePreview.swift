@@ -53,7 +53,7 @@ private struct SwatchSection: View {
                         .fill(token.color)
                         .frame(width: 44, height: 32)
                         .overlay(RoundedRectangle(cornerRadius: 8).stroke(.border.default))
-                    Text("\(title).\(token.name)")
+                    Text(verbatim: "\(title).\(token.name)")
                         .font(.footnote)
                         .foregroundStyle(.text.secondary)
                 }
@@ -65,7 +65,7 @@ private struct SwatchSection: View {
 private struct GradientSection: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text("gradient")
+            Text(verbatim: "gradient")
                 .font(.headline)
                 .foregroundStyle(.text.primary)
             RoundedRectangle(cornerRadius: 12)

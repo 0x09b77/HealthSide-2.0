@@ -23,7 +23,7 @@ private struct RadiusSection: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: .spacing.xs) {
-            Text("radius")
+            Text(verbatim: "radius")
                 .typography(.titleS)
                 .foregroundStyle(.text.primary)
             ForEach(tokens, id: \.name) { token in
@@ -32,7 +32,7 @@ private struct RadiusSection: View {
                         .fill(.accent.soft)
                         .frame(width: 88, height: 44)
                         .overlay(RoundedRectangle(cornerRadius: token.value).stroke(.accent.primary))
-                    Text("radius.\(token.name) \(Int(token.value))")
+                    Text(verbatim: "radius.\(token.name) \(Int(token.value))")
                         .typography(.caption)
                         .foregroundStyle(.text.secondary)
                 }
@@ -49,7 +49,7 @@ private struct SpacingSection: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: .spacing.xs) {
-            Text("spacing")
+            Text(verbatim: "spacing")
                 .typography(.titleS)
                 .foregroundStyle(.text.primary)
             ForEach(tokens, id: \.name) { token in
@@ -57,7 +57,7 @@ private struct SpacingSection: View {
                     Rectangle()
                         .fill(.accent.primary)
                         .frame(width: token.value, height: 16)
-                    Text("spacing.\(token.name) \(Int(token.value))")
+                    Text(verbatim: "spacing.\(token.name) \(Int(token.value))")
                         .typography(.caption)
                         .foregroundStyle(.text.secondary)
                 }
@@ -73,7 +73,7 @@ private struct LayoutSection: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: .spacing.xs) {
-            Text("layout")
+            Text(verbatim: "layout")
                 .typography(.titleS)
                 .foregroundStyle(.text.primary)
             ForEach(tokens, id: \.name) { token in
@@ -85,7 +85,7 @@ private struct LayoutSection: View {
                         .fill(.bg.surface)
                         .frame(height: 32)
                         .overlay(
-                            Text("layout.\(token.name) \(Int(token.value))")
+                            Text(verbatim: "layout.\(token.name) \(Int(token.value))")
                                 .typography(.caption)
                                 .foregroundStyle(.text.secondary)
                                 .padding(.spacing.xxs)
